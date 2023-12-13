@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">MoviesManager</string>
+    <string name="label_list_fragment">Lista dos Filmes</string>
+    <string name="label_detail_fragment">Detalhes do Filme</string>
+    <string name="label_button_add_movie">Botão adicionar filme</string>
+    <string name="label_rating">%1s/10</string>
+    <string name="label_release">%1s - %2smin</string>
+    <string name="label_watched">Já assisti</string>
+    <string name="label_edit">Modificar</string>
+    <string name="label_delete">Deletar</string>
+    <string name="label_title_which_rating_for_movie">Qual nota para o filme?</string>
+    <string name="label_to_rating">Enviar nota</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_send">Enviar</string>
+
+</resources>
