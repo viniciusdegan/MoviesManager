@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.ifsp.scl.moviesmanager.presentation.fragment.DetailsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/movieName"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Coringa" />
+
+        <TextView
+            android:id="@+id/ownerMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Warner Bros" />
+
+        <TextView
+            android:id="@+id/releaseMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="2019 - 135min" />
+
+        <CheckBox
+            android:id="@+id/watchedMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/label_watched" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:isIndicator="true"
+            android:max="10"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="8/10" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
