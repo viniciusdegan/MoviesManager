@@ -5,5 +5,38 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/ListFragment">
 
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="br.edu.ifsp.scl.moviesmanager.presentation.fragment.ListFragment"
+        android:label="@string/label_list_fragment"
+        tools:layout="@layout/fragment_list">
 
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/DetailFragment" />
+        <action
+            android:id="@+id/action_ListFragment_to_registerMovieFragment"
+            app:destination="@id/registerMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="br.edu.ifsp.scl.moviesmanager.presentation.fragment.DetailsFragment"
+        android:label="@string/label_detail_fragment"
+        tools:layout="@layout/detail_fragment">
+
+        <argument
+            android:name="movie"
+            app:argType="br.edu.ifsp.scl.moviesmanager.domain.entity.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerMovieFragment"
+        android:name="br.edu.ifsp.scl.moviesmanager.presentation.fragment.RegisterMovieFragment"
+        android:label="Cadastrar filme"
+        tools:layout="@layout/fragment_register" >
+        <argument
+            android:name="movie"
+            app:argType="br.edu.ifsp.scl.moviesmanager.domain.entity.Movie"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 </navigation>

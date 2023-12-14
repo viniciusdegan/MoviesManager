@@ -29,13 +29,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="Wonder Woman 1984"
-            style="@style/TitleBold" />
+            style="@style/TitleOne" />
 
         <TextView
             android:id="@+id/movieProducer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="DC Comics" />
+            tools:text="Warner Bros" />
 
         <TextView
             android:id="@+id/durationMovieYear"

@@ -14,12 +14,12 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="match_parent" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
-        android:id="@+id/contentMain"
+        android:id="@+id/contenMain"
         layout="@layout/content_main" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
